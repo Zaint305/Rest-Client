@@ -15,41 +15,28 @@
 
     <div class="row mt-3">
         <div class="col-md-6">
-            <a href="<?= base_url(); ?>mahasiswa/tambah" class="btn btn-primary">Tambah
-                Data Mahasiswa</a>
+            <a href="<?= base_url(); ?>Alat/tambah" class="btn btn-primary">Tambah
+                Data Sewa Alat</a>
         </div>
     </div>
 
     <div class="row mt-3">
         <div class="col-md-6">
-            <form action="" method="post">
-                <div class="input-group">
-                    <input type="text" class="form-control" placeholder="Cari data mahasiswa.." name="keyword">
-                    <div class="input-group-append">
-                        <button class="btn btn-primary" type="submit">Cari</button>
-                    </div>
-                </div>
-            </form>
-        </div>
-    </div>
-
-    <div class="row mt-3">
-        <div class="col-md-6">
-            <h3>Daftar Mahasiswa</h3>
-            <?php if (empty($mahasiswa)) : ?>
+            <h3>Daftar Alat</h3>
+            <?php if (empty($Alat)) : ?>
                 <div class="alert alert-danger" role="alert">
-                data mahasiswa tidak ditemukan.
+                data Alat tidak ditemukan.
                 </div>
             <?php endif; ?>
             <ul class="list-group">
-                <?php foreach ($mahasiswa as $mhs) : ?>
+                <?php foreach ($Alat as $al) : ?>
                 <li class="list-group-item">
-                    <?= $mhs['nama']; ?>
-                    <a href="<?= base_url(); ?>mahasiswa/hapus/<?= $mhs['id']; ?>"
+                    <?= $al['Alat']; ?>
+                    <a href="<?= base_url(); ?>Alat/hapus/<?= $al['kode']; ?>"
                         class="badge badge-danger float-right tombol-hapus">hapus</a>
-                    <a href="<?= base_url(); ?>mahasiswa/ubah/<?= $mhs['id']; ?>"
+                    <a href="<?= base_url(); ?>Alat/ubah/<?= $al['kode']; ?>"
                         class="badge badge-success float-right">ubah</a>
-                    <a href="<?= base_url(); ?>mahasiswa/detail/<?= $mhs['id']; ?>"
+                    <a href="<?= base_url(); ?>Alat/detail/<?= $al['kode']; ?>"
                         class="badge badge-primary float-right">detail</a>
                 </li>
                 <?php endforeach; ?>

@@ -30,7 +30,7 @@
         <div class="navbar-nav">
           <a class="nav-item nav-link" href="<?= base_url(); ?>">Home
             <span class="sr-only">(current)</span></a>
-          <a class="nav-item nav-link" href="<?= base_url(); ?>mahasiswa">Mahasiswa</a>
+          <a class="nav-item nav-link" href="<?= base_url(); ?>Alat">Sewa Alat Kontruksi</a>
           <a class="nav-item nav-link" href="#">About</a>
         </div>
       </div>
